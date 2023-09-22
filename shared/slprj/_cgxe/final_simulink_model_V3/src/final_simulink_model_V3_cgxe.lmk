@@ -1,0 +1,49 @@
+CC     = "D:\FILIPPO\SOFTWARE\MATLAB\sys\lcc64\lcc64\bin\lcc64.exe"
+LD     = "D:\FILIPPO\SOFTWARE\MATLAB\sys\lcc64\lcc64\bin\lcclnk64.exe"
+LIBCMD = "D:\FILIPPO\SOFTWARE\MATLAB\sys\lcc64\lcc64\bin\lcclib64.exe"
+CFLAGS = -w -dll -noregistrylookup  -c -Zp8 -DLCC_WIN64 -DMATLAB_MEX_FILE -nodeclspec  
+LDFLAGS = -s -dll -L"D:\FILIPPO\SOFTWARE\MATLAB\sys\lcc64\lcc64\lib64" -entry LibMain -map sfun.map 
+LIBFLAGS = 
+
+OBJECTS = \
+	"c_mexapi_version.obj"\
+	"lccstub.obj"\
+	"final_simulink_model_V3_cgxe.obj"\
+	"m_v6KtncLLObUM0n1CCfyAnC.obj"\
+	"m_5ceqiAnce4NA6Y1FparNJB.obj"\
+	"final_simulink_model_V3_cgxe_registry.obj"\
+	"final_simulink_model_V3_cgxe.def"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libmx.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libmex.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libmat.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libfixedpoint.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libut.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libmwmathutil.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libemlrt.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libmwcgxert.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libmwcgxeooprt.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libmwslexec_simbridge.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libmwslccrt.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libmwstringutil.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\lib\win64\libmwipp.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libcovrt.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libmwsl_sfcn_cov_bridge.lib"\
+	"D:\FILIPPO\SOFTWARE\MATLAB\extern\lib\win64\microsoft\libmwdsp_halidesim.lib"\
+
+INCLUDE_PATH= -I"D:\FILIPPO\SOFTWARE\MATLAB\extern\include"  -I"D:\FILIPPO\SOFTWARE\MATLAB\simulink\include"  -I"D:\FILIPPO\SOFTWARE\MATLAB\rtw\c\src"  -I"C:\Users\Filippo\Desktop\LAR\shared\slprj\_cgxe\final_simulink_model_v3\src"  -I"C:\Users\Filippo\Desktop\LAR\shared"  -I"C:\Users\Filippo\Desktop\LAR\shared\slprj\_cprj"  -I"D:\FILIPPO\SOFTWARE\MATLAB\sys\lcc64\lcc64\include64"  -I"C:\Users\Filippo\Desktop\LAR\shared\slprj\_cgxe\final_simulink_model_V3\src" 
+ 
+
+final_simulink_model_V3_cgxe.mexw64 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o final_simulink_model_V3_cgxe.mexw64 @final_simulink_model_V3_cgxe.lmko
+c_mexapi_version.obj :	"D:\FILIPPO\SOFTWARE\MATLAB\extern\version\c_mexapi_version.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "D:\FILIPPO\SOFTWARE\MATLAB\extern\version\c_mexapi_version.c"
+lccstub.obj :	"D:\FILIPPO\SOFTWARE\MATLAB\sys\lcc64\lcc64\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "D:\FILIPPO\SOFTWARE\MATLAB\sys\lcc64\lcc64\mex\lccstub.c"
+final_simulink_model_V3_cgxe.obj :	"final_simulink_model_V3_cgxe.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "final_simulink_model_V3_cgxe.c"
+m_v6KtncLLObUM0n1CCfyAnC.obj :	"m_v6KtncLLObUM0n1CCfyAnC.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_v6KtncLLObUM0n1CCfyAnC.c"
+m_5ceqiAnce4NA6Y1FparNJB.obj :	"m_5ceqiAnce4NA6Y1FparNJB.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "m_5ceqiAnce4NA6Y1FparNJB.c"
+final_simulink_model_V3_cgxe_registry.obj :	"final_simulink_model_V3_cgxe_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "final_simulink_model_V3_cgxe_registry.c"

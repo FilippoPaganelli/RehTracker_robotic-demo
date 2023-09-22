@@ -1,0 +1,12 @@
+function readBleDataCallback(src, arg)
+    raw_data = read(src,'oldest');
+
+    data = [double(raw_data(1)/100) 0];
+
+    values = struct('values', data);
+    struct_data = struct('time', [], 'signals',values);
+
+    assignin("base", "final_data", final_data);
+
+%     save("ble_value.mat", "final_data", "-v7.3");
+end
