@@ -44,8 +44,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2020-09-25T08:07:25Z</dcterms:created>
   <dc:creator>Jacopo</dc:creator>
   <cp:lastModifiedBy>Filippo</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-07-21T06:03:14Z</dcterms:modified>
-  <cp:revision>6.164</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-10-27T19:49:21Z</dcterms:modified>
+  <cp:revision>6.165</cp:revision>
   <cp:version>R2022a</cp:version>
 </cp:coreProperties>
 
@@ -224,8 +224,8 @@ __MWOPC_PART_BEGIN__ /simulink/blockdiagram.xml
     <ConfigManagerSettings>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
-      <P Name="RTWModifiedTimeStamp">611686751</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.164&gt;</P>
+      <P Name="RTWModifiedTimeStamp">620344157</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:6.165&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="MultithreadedSim">on</P>
@@ -1185,15 +1185,15 @@ Gain</P>
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2020b_20191110">
-  <System type="System" uuid="cacd8ff9-05cf-48e6-8a73-8806c4b90b86">
-    <Interface type="Interface" uuid="747b0e84-f253-4b4e-8a01-27d83b4f94e6"/>
+  <System type="System" uuid="45720ed6-b211-4ac1-9531-ada3b8672c38">
+    <Interface type="Interface" uuid="f90cffd2-b0d6-4862-a493-9583328e3a8b"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2021b_202106150630">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="b0913b42-549f-49d1-a369-02d0674f7dcf">
-    <globalData type="sltp.mm.core.GlobalData" uuid="279beedc-22c3-496b-8bb3-e827fe4b7925">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="c064381c-a18b-4156-b27e-bccd958b52e4">
+    <globalData type="sltp.mm.core.GlobalData" uuid="00700dfa-8104-4acd-9af0-f669d7450618">
       <dataName>porty</dataName>
       <type>RootOutport</type>
     </globalData>
@@ -1203,24 +1203,24 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
       <isSynchronized>true</isSynchronized>
       <panelState type="sltp.mm.core.EditorPanelState" uuid="962c826f-2080-4674-bf4e-77763be62eee"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="7a35d9dd-118a-4291-9efe-46576a6bf5ce">
-      <context type="sltp.mm.core.Context" uuid="b0913b42-549f-49d1-a369-02d0674f7dcf"/>
+    <rootTask type="sltp.mm.core.Task" uuid="fd29531d-7aaf-49f7-8934-d714db4f29b4">
+      <context type="sltp.mm.core.Context" uuid="c064381c-a18b-4156-b27e-bccd958b52e4"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="4a9da409-6bff-4960-a06b-fac0dd058eb6">
-        <connections type="sltp.mm.core.Connection" uuid="f860d507-285d-4c45-90c8-bc75037be1f8">
-          <dst type="sltp.mm.core.Task" uuid="37c10621-2f01-4e9e-9bc9-1234bc5217d9"/>
-          <src type="sltp.mm.core.Task" uuid="21f5142f-eaf4-4a2f-994a-cf38b7ed612c"/>
+      <subgraph type="sltp.mm.core.Graph" uuid="dcb4de4f-711d-4ea9-8ab0-f7bd7f456dab">
+        <connections type="sltp.mm.core.Connection" uuid="e2cc3006-50f7-47a3-9eb2-c1d39ce89bfb">
+          <dst type="sltp.mm.core.Task" uuid="68999cda-9738-43f7-8a61-0e0fb1d4836f"/>
+          <src type="sltp.mm.core.Task" uuid="4d4bb0d3-ec5a-4117-adc0-01fb0aad8055"/>
         </connections>
-        <tasks type="sltp.mm.core.Task" uuid="55812f6d-0212-4143-bf1f-9469ef681b9c">
-          <context type="sltp.mm.core.Context" uuid="b0913b42-549f-49d1-a369-02d0674f7dcf"/>
+        <tasks type="sltp.mm.core.Task" uuid="5880259b-90a4-465c-969d-89fb4a17aceb">
+          <context type="sltp.mm.core.Context" uuid="c064381c-a18b-4156-b27e-bccd958b52e4"/>
           <explicit>false</explicit>
           <id>1</id>
           <isTimed>true</isTimed>
           <name>D1</name>
           <priority>40</priority>
-          <rates type="sltp.mm.core.Rate" uuid="075f4115-7749-4729-9d1a-bcea66773794">
+          <rates type="sltp.mm.core.Rate" uuid="21294973-79c2-4df6-a604-e96111c48909">
             <annotation>D1</annotation>
             <color>-436207361</color>
             <identifier>ClassicPeriodicDiscrete0.0010</identifier>
@@ -1230,15 +1230,15 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             <sti>0</sti>
           </rates>
         </tasks>
-        <tasks type="sltp.mm.core.Task" uuid="21f5142f-eaf4-4a2f-994a-cf38b7ed612c">
-          <context type="sltp.mm.core.Context" uuid="b0913b42-549f-49d1-a369-02d0674f7dcf"/>
+        <tasks type="sltp.mm.core.Task" uuid="4d4bb0d3-ec5a-4117-adc0-01fb0aad8055">
+          <context type="sltp.mm.core.Context" uuid="c064381c-a18b-4156-b27e-bccd958b52e4"/>
           <explicit>false</explicit>
           <id>2</id>
           <isTimed>true</isTimed>
           <name>D2</name>
-          <outConnections type="sltp.mm.core.Connection" uuid="f860d507-285d-4c45-90c8-bc75037be1f8"/>
+          <outConnections type="sltp.mm.core.Connection" uuid="e2cc3006-50f7-47a3-9eb2-c1d39ce89bfb"/>
           <priority>41</priority>
-          <rates type="sltp.mm.core.Rate" uuid="8f71531f-5161-4505-a3a8-3a86654a49c0">
+          <rates type="sltp.mm.core.Rate" uuid="0f2dcab4-6d9a-46ca-993f-7c4b6c8abcf9">
             <annotation>D2</annotation>
             <color>13697279</color>
             <hasBlocks>true</hasBlocks>
@@ -1249,15 +1249,15 @@ __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
             <sti>1</sti>
           </rates>
         </tasks>
-        <tasks type="sltp.mm.core.Task" uuid="37c10621-2f01-4e9e-9bc9-1234bc5217d9">
-          <context type="sltp.mm.core.Context" uuid="b0913b42-549f-49d1-a369-02d0674f7dcf"/>
+        <tasks type="sltp.mm.core.Task" uuid="68999cda-9738-43f7-8a61-0e0fb1d4836f">
+          <context type="sltp.mm.core.Context" uuid="c064381c-a18b-4156-b27e-bccd958b52e4"/>
           <explicit>false</explicit>
           <id>4</id>
-          <inConnections type="sltp.mm.core.Connection" uuid="f860d507-285d-4c45-90c8-bc75037be1f8"/>
+          <inConnections type="sltp.mm.core.Connection" uuid="e2cc3006-50f7-47a3-9eb2-c1d39ce89bfb"/>
           <isTimed>true</isTimed>
           <name>D3</name>
           <priority>42</priority>
-          <rates type="sltp.mm.core.Rate" uuid="9b46eff2-99f7-4d07-8d4c-d96720f8bffb">
+          <rates type="sltp.mm.core.Rate" uuid="64f8c059-a5ea-4466-80dc-649c0cf15a4e">
             <annotation>D3</annotation>
             <color>52479</color>
             <hasBlocks>true</hasBlocks>
@@ -1426,7 +1426,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_143.xml
 <System>
   <P Name="Location">[-8, -8, 1928, 1058]</P>
   <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
-  <P Name="Open">on</P>
   <P Name="SetExecutionDomain">off</P>
   <P Name="ExecutionDomainType">Deduce</P>
   <P Name="SimulinkSubDomain">Simulink</P>
@@ -2199,16 +2198,16 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
   <P Name="ExecutionDomainType">Deduce</P>
   <P Name="ZoomFactor">125</P>
   <P Name="ReportName">simulink-default.rpt</P>
-  <P Name="SIDHighWatermark">697</P>
+  <P Name="SIDHighWatermark">702</P>
   <P Name="SimulinkSubDomain">Simulink</P>
   <Block BlockType="Sum" Name="Add5" SID="596">
     <P Name="Ports">[2, 1]</P>
-    <P Name="Position">[3465, -178, 3495, -147]</P>
+    <P Name="Position">[3435, -173, 3465, -142]</P>
     <P Name="ZOrder">100000</P>
     <P Name="IconShape">rectangular</P>
   </Block>
   <Block BlockType="Constant" Name="Always-Collision Constant" SID="693">
-    <P Name="Position">[3020, -290, 3050, -260]</P>
+    <P Name="Position">[3040, -290, 3070, -260]</P>
     <P Name="ZOrder">100000</P>
     <P Name="Value">false</P>
   </Block>
@@ -2231,7 +2230,7 @@ set_param(&apos;final_simulink_model_V3/reload ball constant&apos;,&apos;Value&a
   </Block>
   <Block BlockType="SubSystem" Name="Collision" SID="658">
     <P Name="Ports">[2, 1]</P>
-    <P Name="Position">[2590, -134, 2965, 44]</P>
+    <P Name="Position">[2610, -134, 2985, 44]</P>
     <P Name="ZOrder">100000</P>
     <P Name="TreatAsAtomicUnit">on</P>
     <P Name="SystemSampleTime">1</P>
@@ -2317,7 +2316,7 @@ Gain</P>
     </InstanceData>
   </Block>
   <Block BlockType="ManualSwitch" Name="Manual Switch 2" SID="694">
-    <P Name="Position">[3170, -238, 3200, -202]</P>
+    <P Name="Position">[3190, -238, 3220, -202]</P>
     <P Name="ZOrder">100000</P>
     <Port>
       <P Name="PortNumber">1</P>
@@ -2338,17 +2337,17 @@ Gain</P>
   </Block>
   <Block BlockType="Product" Name="Product3" SID="604">
     <P Name="Ports">[2, 1]</P>
-    <P Name="Position">[3390, -98, 3420, -67]</P>
+    <P Name="Position">[3365, -98, 3395, -67]</P>
     <P Name="ZOrder">100000</P>
   </Block>
   <Block BlockType="Product" Name="Product6" SID="606">
     <P Name="Ports">[2, 1]</P>
-    <P Name="Position">[3365, -188, 3395, -157]</P>
+    <P Name="Position">[3310, -228, 3340, -197]</P>
     <P Name="ZOrder">100000</P>
   </Block>
   <Block BlockType="RelationalOperator" Name="Relational&#xA;Operator" SID="608">
     <P Name="Ports">[2, 1]</P>
-    <P Name="Position">[3020, -228, 3050, -197]</P>
+    <P Name="Position">[3040, -228, 3070, -197]</P>
     <P Name="ZOrder">100000</P>
     <P Name="ShowName">off</P>
     <P Name="Operator">&lt;</P>
@@ -2380,7 +2379,7 @@ Gain</P>
     <System Ref="system_654"/>
   </Block>
   <Block BlockType="UnitDelay" Name="Unit Delay" SID="609">
-    <P Name="Position">[3165, 58, 3200, 92]</P>
+    <P Name="Position">[3185, 58, 3220, 92]</P>
     <P Name="ZOrder">100000</P>
     <P Name="BlockMirror">on</P>
     <P Name="NameLocation">top</P>
@@ -2456,9 +2455,10 @@ Gain</P>
   <Line>
     <P Name="ZOrder">585</P>
     <P Name="Src">596#out:1</P>
-    <P Name="Points">[9, 0; 0, 105]</P>
+    <P Name="Points">[59, 0; 0, 100]</P>
     <Branch>
       <P Name="ZOrder">788</P>
+      <P Name="Points">[56, 0]</P>
       <P Name="Dst">143#in:1</P>
     </Branch>
     <Branch>
@@ -2475,7 +2475,7 @@ Gain</P>
   <Line>
     <P Name="ZOrder">765</P>
     <P Name="Src">658#out:1</P>
-    <P Name="Points">[400, 0; 0, -30; 20, 0]</P>
+    <P Name="Points">[348, 0; 0, -30]</P>
     <P Name="Dst">604#in:2</P>
   </Line>
   <Line>
@@ -2486,12 +2486,13 @@ Gain</P>
   <Line>
     <P Name="ZOrder">573</P>
     <P Name="Src">606#out:1</P>
+    <P Name="Points">[65, 0; 0, 45]</P>
     <P Name="Dst">596#in:1</P>
   </Line>
   <Line>
     <P Name="ZOrder">789</P>
     <P Name="Src">654#out:1</P>
-    <P Name="Points">[35, 0]</P>
+    <P Name="Points">[55, 0]</P>
     <Branch>
       <P Name="ZOrder">838</P>
       <P Name="Points">[0, 75]</P>
@@ -2499,6 +2500,7 @@ Gain</P>
     </Branch>
     <Branch>
       <P Name="ZOrder">617</P>
+      <P Name="Points">[707, 0; 0, -40]</P>
       <P Name="Dst">606#in:2</P>
     </Branch>
     <Branch>
@@ -2510,7 +2512,7 @@ Gain</P>
   <Line>
     <P Name="ZOrder">566</P>
     <P Name="Src">604#out:1</P>
-    <P Name="Points">[17, 0; 0, -75]</P>
+    <P Name="Points">[10, 0; 0, -70]</P>
     <P Name="Dst">596#in:2</P>
   </Line>
   <Line>
@@ -2526,7 +2528,6 @@ Gain</P>
     </Branch>
     <Branch>
       <P Name="ZOrder">843</P>
-      <P Name="Points">[114, 0]</P>
       <P Name="Dst">606#in:1</P>
     </Branch>
   </Line>
@@ -2582,6 +2583,42 @@ Gain</P>
     <P Name="Points">[0, -65]</P>
     <P Name="Dst">697#in:2</P>
   </Line>
+  <Annotation SID="702">
+    <P Name="Name">visualisation</P>
+    <P Name="Position">[3561, -162, 3755, 51]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="BackgroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">635</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="699">
+    <P Name="Name">collision detection</P>
+    <P Name="Position">[2564, -308, 3547, 118]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="BackgroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">633</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
+  <Annotation SID="698">
+    <P Name="Name">data input</P>
+    <P Name="Position">[2226, -243, 2530, 24]</P>
+    <P Name="InternalMargins">[0, 0, 0, 0]</P>
+    <P Name="FixedWidth">on</P>
+    <P Name="ForegroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="BackgroundColor">[0.901961, 0.901961, 1.000000]</P>
+    <P Name="DropShadow">on</P>
+    <P Name="AnnotationType">area_annotation</P>
+    <P Name="ZOrder">634</P>
+    <P Name="FontSize">12</P>
+  </Annotation>
   <Annotation SID="95">
     <P Name="Name">Collision Object Parameters
 </P>
@@ -2593,7 +2630,7 @@ Gain</P>
     <P Name="BackgroundColor">[0.901961, 0.901961, 1.000000]</P>
     <P Name="DropShadow">on</P>
     <P Name="AnnotationType">area_annotation</P>
-    <P Name="ZOrder">610</P>
+    <P Name="ZOrder">636</P>
     <P Name="FontSize">12</P>
   </Annotation>
   <Annotation SID="683">
@@ -2612,7 +2649,7 @@ p, li { white-space: pre-wrap; }
   <Annotation SID="684">
     <P Name="Name">net letting pass only non-collision next step position, based on current collision situation.
 backward position changes are always allowed (IF &quot;Manual Switch 2&quot; lets &quot;isOpening&quot; pass)</P>
-    <P Name="Position">[3337, -31, 3497, 58]</P>
+    <P Name="Position">[3280, -33, 3440, 56]</P>
     <P Name="InternalMargins">[0, 0, 0, 0]</P>
     <P Name="FixedHeight">on</P>
     <P Name="FixedWidth">on</P>
@@ -2646,12 +2683,12 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="LoadSaveID" Class="char">0</P>
           <P Name="Extents" Class="double">[1524.0, 824.0]</P>
           <P Name="ZoomFactor" Class="double">1.25</P>
-          <P Name="Offset" Class="double">[2222.8999999999974, -378.54481312904443]</P>
-          <P Name="SceneRectInView" Class="double">[2222.8999999999974, -378.54481312904443, 1219.2, 659.2]</P>
+          <P Name="Offset" Class="double">[2589.529998779306, -378.54481312904443]</P>
+          <P Name="SceneRectInView" Class="double">[2589.529998779306, -378.54481312904443, 1219.2, 659.2]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
-          <P Name="IsTabbed" Class="logical">1</P>
+          <P Name="IsTabbed" Class="logical">0</P>
           <P Name="ViewObjType" Class="char">SimulinkSubsys</P>
           <P Name="LoadSaveID" Class="char">143</P>
           <P Name="Extents" Class="double">[1524.0, 824.0]</P>
@@ -2852,18 +2889,6 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
       </Array>
       <Array PropName="DockComponentsInfo" Type="Simulink.DockComponentInfo" Dimension="1*2">
         <Object ObjectID="26">
-          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
-          <P Name="ID" Class="char">Property Inspector</P>
-          <P Name="Visible" Class="logical">1</P>
-          <P Name="CreateCallback" Class="char"/>
-          <P Name="UserData" Class="char"/>
-          <P Name="Floating" Class="logical">0</P>
-          <P Name="DockPosition" Class="char">Right</P>
-          <P Name="Width" Class="int32">320</P>
-          <P Name="Height" Class="int32">857</P>
-          <P Name="Minimized" Class="char">Off</P>
-        </Object>
-        <Object ObjectID="27">
           <P Name="Type" Class="char">Simulink:Editor:ReferencedFiles</P>
           <P Name="ID" Class="char">Referenced Files</P>
           <P Name="Visible" Class="logical">0</P>
@@ -2875,6 +2900,18 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Width" Class="int32">174</P>
           <P Name="Height" Class="int32">112</P>
           <P Name="Minimized" Class="char">Unset</P>
+        </Object>
+        <Object ObjectID="27">
+          <P Name="Type" Class="char">GLUE2:PropertyInspector</P>
+          <P Name="ID" Class="char">Property Inspector</P>
+          <P Name="Visible" Class="logical">1</P>
+          <P Name="CreateCallback" Class="char"/>
+          <P Name="UserData" Class="char"/>
+          <P Name="Floating" Class="logical">0</P>
+          <P Name="DockPosition" Class="char">Right</P>
+          <P Name="Width" Class="int32">320</P>
+          <P Name="Height" Class="int32">857</P>
+          <P Name="Minimized" Class="char">Off</P>
         </Object>
       </Array>
       <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAADdfwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAeQAAA3UAAABjAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAjAD///8AAAABAAABRAAAA3X8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgEAAAB5AAADdQAAAIsA////AAAAAwAABhoAAADQ/AEAAAAD/AAAAB4AAAb6AAAAAAD////6/////wEAAAAA/AAAAB4AAAdCAAAAAAD////6/////wEAAAAA+/////8AAAAAAP////8AAAFZAP///wAABhoAAAN1AAAAAQAAAAIAAAABAAAAAvwAAAADAAAAAAAAAAEAAAA2AGMAbwBsAGwAYQBwAHMAaQBiAGwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBMAGUAZgB0AwAAAAD/////AAAAAAAAAAAAAAABAAAAAQAAADgAYwBvAGwAbABhAHAAcwBpAGIAbABlAFAAYQBuAGUAbABUAG8AbwBsAEIAYQByAFIAaQBnAGgAdAIAAAAA/////wAAAAAAAAAAAAAAAwAAAAEAAAA6AGMAbwBsAGwAYQBwAHMAaQBiAGwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBCAG8AdAB0AG8AbQAAAAAA/////wAAAAAAAAAA</P>
