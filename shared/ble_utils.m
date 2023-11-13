@@ -1,5 +1,5 @@
 % clear workspace from previously connected devices
-clear device;
+clear;
 
 % connect to physical prototype via device ID
 device = ble("021E7DE0C1CB");
